@@ -6,21 +6,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\takram\algorithm\leaf_iterator_iterator.h">
+    <ClInclude Include="..\src\shotamatsuda\algorithm\leaf_iterator_iterator.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\algorithm\tuple_iterator_iterator.h">
+    <ClInclude Include="..\src\shotamatsuda\algorithm\tuple_iterator_iterator.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\algorithm\variadic_template.h">
+    <ClInclude Include="..\src\shotamatsuda\algorithm\variadic_template.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\algorithm.h">
+    <ClInclude Include="..\src\shotamatsuda\algorithm.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\takram\algorithm.cc">
+    <ClCompile Include="..\src\shotamatsuda\algorithm.cc">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

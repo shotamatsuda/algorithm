@@ -3,7 +3,7 @@
 //
 //  The MIT License
 //
-//  Copyright (C) 2014-2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -24,5 +24,10 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
+SHOTAMATSUDA_ALGORITHM_DIR = $(PROJECT_DIR)
+
+#include "shared.xcconfig"
+
 // Search Paths
-USER_HEADER_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/src" "$(PROJECT_DIR)/lib"
+HEADER_SEARCH_PATHS = $(inherited) $(SHOTAMATSUDA_ALGORITHM_HEADER_SEARCH_PATHS)
+USER_HEADER_SEARCH_PATHS = $(inherited) $(SHOTAMATSUDA_ALGORITHM_USER_HEADER_SEARCH_PATHS)

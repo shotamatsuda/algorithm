@@ -1,9 +1,9 @@
 //
-//  takram/algorithm/leaf_iterator_iterator.h
+//  shotamatsuda/algorithm/leaf_iterator_iterator.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,21 +25,21 @@
 //
 
 #pragma once
-#ifndef TAKRAM_ALGORITHM_LEAF_ITERATOR_ITERATOR_H_
-#define TAKRAM_ALGORITHM_LEAF_ITERATOR_ITERATOR_H_
+#ifndef SHOTAMATSUDA_ALGORITHM_LEAF_ITERATOR_ITERATOR_H_
+#define SHOTAMATSUDA_ALGORITHM_LEAF_ITERATOR_ITERATOR_H_
 
 #include <iterator>
 
-#include "takram/algorithm/variadic_template.h"
+#include "shotamatsuda/algorithm/variadic_template.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace algorithm {
 
 // Primary template
 template <class... Iterators>
 class LeafIteratorIterator;
 
-#pragma mark -
+// MARK: -
 
 // Terminating partial specialization
 template <class Iterator>
@@ -80,7 +80,7 @@ class LeafIteratorIterator<Iterator> final
   Iterator current_;
 };
 
-#pragma mark -
+// MARK: -
 
 // Recursive partial specialization
 template <class Iterator, class... RestIterators>
@@ -129,7 +129,7 @@ class LeafIteratorIterator<Iterator, RestIterators...> final
   LeafIteratorIterator<RestIterators...> rest_;
 };
 
-#pragma mark -
+// MARK: -
 
 template <class Iterator>
 inline LeafIteratorIterator<Iterator>::LeafIteratorIterator() : current_() {}
@@ -152,7 +152,7 @@ inline LeafIteratorIterator<Iterator, RestIterators...>::LeafIteratorIterator(
   validate();
 }
 
-#pragma mark Comparison
+// MARK: Comparison
 
 template <class Iterator>
 inline bool operator==(const LeafIteratorIterator<Iterator>& lhs,
@@ -183,7 +183,7 @@ inline bool operator!=(
   return !(lhs == rhs);
 }
 
-#pragma mark Iterator
+// MARK: Iterator
 
 template <class Iterator>
 inline typename LeafIteratorIterator<Iterator>::Reference
@@ -251,6 +251,6 @@ inline const LeafIteratorIterator<Iterator, RestIterators...>&
 
 using algorithm::LeafIteratorIterator;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_ALGORITHM_LEAF_ITERATOR_ITERATOR_H_
+#endif  // SHOTAMATSUDA_ALGORITHM_LEAF_ITERATOR_ITERATOR_H_

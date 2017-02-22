@@ -1,9 +1,9 @@
 //
-//  takram/algorithm/tuple_iterator_iterator.h
+//  shotamatsuda/algorithm/tuple_iterator_iterator.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,15 +25,15 @@
 //
 
 #pragma once
-#ifndef TAKRAM_ALGORITHM_TUPLE_ITERATOR_ITERATOR_H_
-#define TAKRAM_ALGORITHM_TUPLE_ITERATOR_ITERATOR_H_
+#ifndef SHOTAMATSUDA_ALGORITHM_TUPLE_ITERATOR_ITERATOR_H_
+#define SHOTAMATSUDA_ALGORITHM_TUPLE_ITERATOR_ITERATOR_H_
 
 #include <cstddef>
 #include <iterator>
 #include <tuple>
 #include <utility>
 
-namespace takram {
+namespace shotamatsuda {
 namespace algorithm {
 
 template <class... Iterators>
@@ -84,7 +84,7 @@ class TupleIteratorIterator final
   std::tuple<Iterators...> iterators_;
 };
 
-#pragma mark -
+// MARK: -
 
 template <class... Iterators>
 inline TupleIteratorIterator<Iterators...>::TupleIteratorIterator() {}
@@ -94,7 +94,7 @@ inline TupleIteratorIterator<Iterators...>::TupleIteratorIterator(
     Iterators... iterators)
     : iterators_(iterators...) {}
 
-#pragma mark Comparison
+// MARK: Comparison
 
 template <class... Iterators>
 inline bool operator==(const TupleIteratorIterator<Iterators...>& lhs,
@@ -116,7 +116,7 @@ inline bool TupleIteratorIterator<Iterators...>::equals(
   return Equals<Indexes...>()(*this, other);
 }
 
-#pragma mark Iterator
+// MARK: Iterator
 
 template <class... Iterators>
 inline typename TupleIteratorIterator<Iterators...>::Type
@@ -154,7 +154,7 @@ inline const TupleIteratorIterator<Iterators...>&
   return result;
 }
 
-#pragma mark -
+// MARK: -
 
 template <class... Iterators>
 template <std::size_t Index, std::size_t... Indexes>
@@ -198,6 +198,6 @@ struct TupleIteratorIterator<Iterators...>::Increment<Index> {
 
 using algorithm::TupleIteratorIterator;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_ALGORITHM_TUPLE_ITERATOR_ITERATOR_H_
+#endif  // SHOTAMATSUDA_ALGORITHM_TUPLE_ITERATOR_ITERATOR_H_

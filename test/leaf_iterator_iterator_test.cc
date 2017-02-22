@@ -3,7 +3,7 @@
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -29,9 +29,9 @@
 
 #include "gtest/gtest.h"
 
-#include "takram/algorithm/leaf_iterator_iterator.h"
+#include "shotamatsuda/algorithm/leaf_iterator_iterator.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace algorithm {
 
 namespace {
@@ -117,4 +117,4 @@ TEST(LeafIteratorIteratorTest, Distance) {
 }
 
 }  // namespace algorithm
-}  // namespace takram
+}  // namespace shotamatsuda

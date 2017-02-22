@@ -1,5 +1,5 @@
 //
-//  project_debug.xcconfig
+//  shotamatsuda/algorithm.cc
 //
 //  The MIT License
 //
@@ -24,21 +24,13 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-#include "project.xcconfig"
+#include "shotamatsuda/algorithm.h"
 
-// Build Options
-DEBUG_INFORMATION_FORMAT = dwarf
-ENABLE_TESTABILITY = YES
+namespace shotamatsuda {
+namespace algorithm {
 
-// Deployment
-COPY_PHASE_STRIP = NO
+const double version_number = 1.0;
+const unsigned char version_string[] = "1.0";
 
-// Apple LLVM - Code Generation
-GCC_OPTIMIZATION_LEVEL = 0
-GCC_FAST_MATH = NO
-
-// Apple LLVM - Preprocessing
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) DEBUG=1
-
-// User-Defined
-MTL_ENABLE_DEBUG_INFO = YES
+}  // namespace algorithm
+}  // namespace shotamatsuda

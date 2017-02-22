@@ -1,9 +1,9 @@
 //
-//  takram/algorithm/variadic_template.h
+//  shared.xcconfig
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -24,35 +24,6 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-#pragma once
-#ifndef TAKRAM_ALGORITHM_VARIADIC_TEMPLATE_H_
-#define TAKRAM_ALGORITHM_VARIADIC_TEMPLATE_H_
-
-namespace takram {
-namespace algorithm {
-
-template <class... Rest>
-struct First;
-
-template <class T, class... Rest>
-struct First<T, Rest...> {
-  using Type = T;
-};
-
-template <class... Rest>
-struct Last;
-
-template <class T>
-struct Last<T> {
-  using Type = T;
-};
-
-template <class T, class... Rest>
-struct Last<T, Rest...> {
-  using Type = typename Last<Rest...>::Type;
-};
-
-}  // namespace algorithm
-}  // namespace takram
-
-#endif  // TAKRAM_ALGORITHM_VARIADIC_TEMPLATE_H_
+// Search Paths
+SHOTAMATSUDA_ALGORITHM_HEADER_SEARCH_PATHS =
+SHOTAMATSUDA_ALGORITHM_USER_HEADER_SEARCH_PATHS = "$(SHOTAMATSUDA_ALGORITHM_DIR)/src" "$(SHOTAMATSUDA_ALGORITHM_DIR)/lib"

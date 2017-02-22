@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		930955321A4FB46600D09023 /* libtakram_algorithm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309550E1A4FB1FC00D09023 /* libtakram_algorithm.dylib */; };
+		930955321A4FB46600D09023 /* libshota_algorithm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309550E1A4FB1FC00D09023 /* libshota_algorithm.dylib */; };
 		93247C141B309260001F8AF0 /* tuple_iterator_iterator_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93247C131B309260001F8AF0 /* tuple_iterator_iterator_test.cc */; };
 		9397F5C11B647F6400DFEDC9 /* algorithm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93D7E5131B2D22B2006EA047 /* algorithm.cc */; };
 		93D7E5101B2C820B006EA047 /* leaf_iterator_iterator_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93D7E50F1B2C820B006EA047 /* leaf_iterator_iterator_test.cc */; };
@@ -16,32 +16,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		930955301A4FB46000D09023 /* PBXContainerItemProxy */ = {
+		93DD80271DB3C292006C994D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 93F8AD6717C8B39800310877 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9309550D1A4FB1FC00D09023;
-			remoteInfo = takram_triangulation_shared;
+			remoteInfo = algorithm_shared;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		930955031A4FB1E200D09023 /* product.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = product.xcconfig; sourceTree = "<group>"; };
 		930955061A4FB1E200D09023 /* test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = test.xcconfig; sourceTree = "<group>"; };
-		9309550E1A4FB1FC00D09023 /* libtakram_algorithm.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtakram_algorithm.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9309550E1A4FB1FC00D09023 /* libshota_algorithm.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libshota_algorithm.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		930959301A5062D400D09023 /* project_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_debug.xcconfig; sourceTree = "<group>"; };
 		930959311A5062D400D09023 /* project_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_release.xcconfig; sourceTree = "<group>"; };
 		930959321A5062D400D09023 /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
 		93247C101B3085D8001F8AF0 /* tuple_iterator_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuple_iterator_iterator.h; sourceTree = "<group>"; };
 		93247C131B309260001F8AF0 /* tuple_iterator_iterator_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tuple_iterator_iterator_test.cc; sourceTree = "<group>"; };
 		936798521B307EA5004BE30A /* variadic_template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = variadic_template.h; sourceTree = "<group>"; };
-		9397F58D1B647CAA00DFEDC9 /* libtakram_algorithm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtakram_algorithm.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		93C6B51519B22F5500A1CF93 /* libtakram_algorithm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtakram_algorithm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9397F58D1B647CAA00DFEDC9 /* libshota_algorithm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libshota_algorithm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B4E9561E5D2DB000233E24 /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		93C6B51519B22F5500A1CF93 /* libshota_algorithm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libshota_algorithm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D7E50F1B2C820B006EA047 /* leaf_iterator_iterator_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = leaf_iterator_iterator_test.cc; sourceTree = "<group>"; };
 		93D7E5121B2D22B2006EA047 /* leaf_iterator_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leaf_iterator_iterator.h; sourceTree = "<group>"; };
 		93D7E5131B2D22B2006EA047 /* algorithm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = algorithm.cc; sourceTree = "<group>"; };
 		93D7E5141B2D22B2006EA047 /* algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algorithm.h; sourceTree = "<group>"; };
-		93F1B9F6180282B0002A5A5C /* takram_algorithm_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = takram_algorithm_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F1B9F6180282B0002A5A5C /* shota_algorithm_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shota_algorithm_test; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930955321A4FB46600D09023 /* libtakram_algorithm.dylib in Frameworks */,
+				930955321A4FB46600D09023 /* libshota_algorithm.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +84,7 @@
 				930959321A5062D400D09023 /* project.xcconfig */,
 				930959301A5062D400D09023 /* project_debug.xcconfig */,
 				930959311A5062D400D09023 /* project_release.xcconfig */,
+				93B4E9561E5D2DB000233E24 /* shared.xcconfig */,
 				930955031A4FB1E200D09023 /* product.xcconfig */,
 				930955061A4FB1E200D09023 /* test.xcconfig */,
 			);
@@ -97,7 +99,7 @@
 				93D7E5111B2D22B2006EA047 /* algorithm */,
 			);
 			name = src;
-			path = src/takram;
+			path = src/shotamatsuda;
 			sourceTree = "<group>";
 		};
 		93D7E4261B2C20BE006EA047 /* test */ = {
@@ -132,10 +134,10 @@
 		93F8AD7017C8B39800310877 /* products */ = {
 			isa = PBXGroup;
 			children = (
-				9309550E1A4FB1FC00D09023 /* libtakram_algorithm.dylib */,
-				93C6B51519B22F5500A1CF93 /* libtakram_algorithm.a */,
-				9397F58D1B647CAA00DFEDC9 /* libtakram_algorithm.a */,
-				93F1B9F6180282B0002A5A5C /* takram_algorithm_test */,
+				9309550E1A4FB1FC00D09023 /* libshota_algorithm.dylib */,
+				93C6B51519B22F5500A1CF93 /* libshota_algorithm.a */,
+				9397F58D1B647CAA00DFEDC9 /* libshota_algorithm.a */,
+				93F1B9F6180282B0002A5A5C /* shota_algorithm_test */,
 			);
 			name = products;
 			sourceTree = "<group>";
@@ -156,8 +158,8 @@
 			dependencies = (
 			);
 			name = algorithm_shared;
-			productName = takram_triangulation;
-			productReference = 9309550E1A4FB1FC00D09023 /* libtakram_algorithm.dylib */;
+			productName = algorithm_shared;
+			productReference = 9309550E1A4FB1FC00D09023 /* libshota_algorithm.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		9397F58C1B647CAA00DFEDC9 /* algorithm_ios */ = {
@@ -174,7 +176,7 @@
 			);
 			name = algorithm_ios;
 			productName = algorithm_ios;
-			productReference = 9397F58D1B647CAA00DFEDC9 /* libtakram_algorithm.a */;
+			productReference = 9397F58D1B647CAA00DFEDC9 /* libshota_algorithm.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		93C6B51419B22F5500A1CF93 /* algorithm_static */ = {
@@ -190,8 +192,8 @@
 			dependencies = (
 			);
 			name = algorithm_static;
-			productName = sgss_opaque;
-			productReference = 93C6B51519B22F5500A1CF93 /* libtakram_algorithm.a */;
+			productName = algorithm_static;
+			productReference = 93C6B51519B22F5500A1CF93 /* libshota_algorithm.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		93F1B9F5180282B0002A5A5C /* algorithm_test */ = {
@@ -207,8 +209,8 @@
 				930955311A4FB46000D09023 /* PBXTargetDependency */,
 			);
 			name = algorithm_test;
-			productName = sgss_opaque_test;
-			productReference = 93F1B9F6180282B0002A5A5C /* takram_algorithm_test */;
+			productName = algorithm_test;
+			productReference = 93F1B9F6180282B0002A5A5C /* shota_algorithm_test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +220,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = sgss;
+				ORGANIZATIONNAME = shotamatsuda;
 				TargetAttributes = {
 					9309550D1A4FB1FC00D09023 = {
 						CreatedOnToolsVersion = 6.1;
@@ -330,7 +332,7 @@
 		930955311A4FB46000D09023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9309550D1A4FB1FC00D09023 /* algorithm_shared */;
-			targetProxy = 930955301A4FB46000D09023 /* PBXContainerItemProxy */;
+			targetProxy = 93DD80271DB3C292006C994D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,7 +345,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -356,7 +358,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -368,7 +370,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -380,7 +382,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -392,7 +394,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 			};
 			name = Debug;
 		};
@@ -403,7 +405,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 			};
 			name = Release;
 		};
@@ -412,7 +414,7 @@
 			baseConfigurationReference = 930955061A4FB1E200D09023 /* test.xcconfig */;
 			buildSettings = {
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/lib";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)_test";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)_test";
 			};
 			name = Debug;
 		};
@@ -421,7 +423,7 @@
 			baseConfigurationReference = 930955061A4FB1E200D09023 /* test.xcconfig */;
 			buildSettings = {
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/lib";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)_test";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)_test";
 			};
 			name = Release;
 		};
@@ -429,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 930959301A5062D400D09023 /* project_debug.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -439,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 930959311A5062D400D09023 /* project_release.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				SDKROOT = macosx;
 			};
 			name = Release;

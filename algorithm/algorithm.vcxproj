@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\takram\algorithm.h" />
-    <ClInclude Include="..\src\takram\algorithm\leaf_iterator_iterator.h" />
-    <ClInclude Include="..\src\takram\algorithm\tuple_iterator_iterator.h" />
-    <ClInclude Include="..\src\takram\algorithm\variadic_template.h" />
+    <ClInclude Include="..\src\shotamatsuda\algorithm.h" />
+    <ClInclude Include="..\src\shotamatsuda\algorithm\leaf_iterator_iterator.h" />
+    <ClInclude Include="..\src\shotamatsuda\algorithm\tuple_iterator_iterator.h" />
+    <ClInclude Include="..\src\shotamatsuda\algorithm\variadic_template.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\takram\algorithm.cc" />
+    <ClCompile Include="..\src\shotamatsuda\algorithm.cc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{94341CDF-2064-48A1-BAFB-C21AC3DE3B84}</ProjectGuid>

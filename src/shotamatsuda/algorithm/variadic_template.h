@@ -1,9 +1,9 @@
 //
-//  takram/algorithm.h
+//  shotamatsuda/algorithm/variadic_template.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,20 +25,34 @@
 //
 
 #pragma once
-#ifndef TAKRAM_ALGORITHM_H_
-#define TAKRAM_ALGORITHM_H_
+#ifndef SHOTAMATSUDA_ALGORITHM_VARIADIC_TEMPLATE_H_
+#define SHOTAMATSUDA_ALGORITHM_VARIADIC_TEMPLATE_H_
 
-namespace takram {
+namespace shotamatsuda {
 namespace algorithm {
 
-extern const double version_number;
-extern const unsigned char version_string[];
+template <class... Rest>
+struct First;
+
+template <class T, class... Rest>
+struct First<T, Rest...> {
+  using Type = T;
+};
+
+template <class... Rest>
+struct Last;
+
+template <class T>
+struct Last<T> {
+  using Type = T;
+};
+
+template <class T, class... Rest>
+struct Last<T, Rest...> {
+  using Type = typename Last<Rest...>::Type;
+};
 
 }  // namespace algorithm
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#include "takram/algorithm/leaf_iterator_iterator.h"
-#include "takram/algorithm/tuple_iterator_iterator.h"
-#include "takram/algorithm/variadic_template.h"
-
-#endif  // TAKRAM_ALGORITHM_H_
+#endif  // SHOTAMATSUDA_ALGORITHM_VARIADIC_TEMPLATE_H_

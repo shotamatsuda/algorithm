@@ -3,19 +3,19 @@ Algorithm
 
 A collection of C++ classes and functions designed to be used on ranges of elements.
 
-[![Build Status](https://travis-ci.org/takram-design-engineering/takram-algorithm.svg)](https://travis-ci.org/takram-design-engineering/takram-algorithm) [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+[![Build Status](https://travis-ci.org/shotamatsuda/algorithm.svg)](https://travis-ci.org/shotamatsuda/algorithm) [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 
 ### Classes
 
-- [`takram::algorithm::TupleIteratorIterator`](src/takram/algorithm/tuple_iterator_iterator.h)
-- [`takram::algorithm::LeafIteratorIterator`](src/takram/algorithm/leaf_iterator_iterator.h)
+- [`shotamatsuda::algorithm::TupleIteratorIterator`](src/shotamatsuda/algorithm/tuple_iterator_iterator.h)
+- [`shotamatsuda::algorithm::LeafIteratorIterator`](src/shotamatsuda/algorithm/leaf_iterator_iterator.h)
 
 ## Examples
 
 ### TupleIteratorIterator
 
-[TupleIteratorIterator](src/takram/algorithm/tuple_iterator_iterator.h) is a forward iterator that increments all the internal iterators passed to its constructor. The value type of TupleIteratorIterator is a specialization of std::tuple that holds references to the values of the internal iterators. Two TupleIteratorIterators are considered equal when both share one of the internal iterators, so that the iteration stops at the shortest distance among the containers.
+[TupleIteratorIterator](src/shotamatsuda/algorithm/tuple_iterator_iterator.h) is a forward iterator that increments all the internal iterators passed to its constructor. The value type of TupleIteratorIterator is a specialization of std::tuple that holds references to the values of the internal iterators. Two TupleIteratorIterators are considered equal when both share one of the internal iterators, so that the iteration stops at the shortest distance among the containers.
 
 ```cpp
 #include <iostream>
@@ -23,7 +23,7 @@ A collection of C++ classes and functions designed to be used on ranges of eleme
 #include <numeric>
 #include <vector>
 
-#include "takram/algorithm/tuple_iterator_iterator.h"
+#include "shotamatsuda/algorithm/tuple_iterator_iterator.h"
 
 std::vector<int> a(4);
 std::vector<float> b(5);
@@ -32,7 +32,7 @@ std::iota(a.begin(), a.end(), 0);
 std::iota(b.begin(), b.end(), 0);
 std::iota(c.begin(), c.end(), 0);
 
-using Iterator = takram::TupleIteratorIterator<
+using Iterator = shotamatsuda::TupleIteratorIterator<
     decltype(a)::iterator, decltype(b)::iterator, decltype(c)::iterator>;
 auto itr = Iterator(std::begin(a), std::begin(b), std::begin(c));
 const auto end = Iterator(std::end(a), std::end(b), std::end(c));
@@ -55,19 +55,19 @@ This code will output:
 
 ### LeafIteratorIterator
 
-A [LeafIteratorIterator](src/takram/algorithm/leaf_iterator_iterator.h) traverses all the leafs in a container that has a tree-like structure.
+A [LeafIteratorIterator](src/shotamatsuda/algorithm/leaf_iterator_iterator.h) traverses all the leafs in a container that has a tree-like structure.
 
 ```cpp
 #include <iostream>
 #include <iterator>
 #include <vector>
 
-#include "takram/algorithm/leaf_iterator_iterator.h"
+#include "shotamatsuda/algorithm/leaf_iterator_iterator.h"
 
 using C = std::vector<int>;
 using B = std::vector<C>;
 using A = std::vector<B>;
-using Iterator = takram::LeafIteratorIterator<A::iterator, B::iterator, C::iterator>;
+using Iterator = shotamatsuda::LeafIteratorIterator<A::iterator, B::iterator, C::iterator>;
 
 A a{{{}}, {{0, 1}, {2, 3}}, {{}}, {{}, {4, 5}, {}}, {{}}};
 auto itr = Iterator(std::begin(a), std::end(a));
@@ -95,7 +95,7 @@ Run "setup.sh" inside "script" directory to initialize submodules and build depe
 
 The MIT License
 
-Copyright (C) 2015-2016 Shota Matsuda
+Copyright (C) 2013-2017 Shota Matsuda
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

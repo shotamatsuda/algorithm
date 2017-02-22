@@ -1,9 +1,9 @@
 //
-//  takram/algorithm.cc
+//  shotamatsuda/algorithm.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -24,13 +24,21 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-#include "takram/algorithm.h"
+#pragma once
+#ifndef SHOTAMATSUDA_ALGORITHM_H_
+#define SHOTAMATSUDA_ALGORITHM_H_
 
-namespace takram {
+namespace shotamatsuda {
 namespace algorithm {
 
-const double version_number = 1.0;
-const unsigned char version_string[] = "1.0";
+extern const double version_number;
+extern const unsigned char version_string[];
 
 }  // namespace algorithm
-}  // namespace takram
+}  // namespace shotamatsuda
+
+#include "shotamatsuda/algorithm/leaf_iterator_iterator.h"
+#include "shotamatsuda/algorithm/tuple_iterator_iterator.h"
+#include "shotamatsuda/algorithm/variadic_template.h"
+
+#endif  // SHOTAMATSUDA_ALGORITHM_H_
